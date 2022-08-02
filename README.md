@@ -68,3 +68,16 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+<!-- create inputs for cat profiles. -->
+<!-- create new cat (name), (enjoys) bio, age, picture -->
+<!-- edit update status/mood using dropdown: feeling good, fiesty, destructive -->
+<!-- read: viewing all cats on page with name underneath; select to go to individual profile  -->
+<!-- delete profile - found love -->
+
+<!-- STYLING -->
+<!-- Home page: minimal, sleek, premium tinder -->
+    <!-- links: Home (all profiles), pricing (free - #swipes, premium - unlimited), About (creators of the app in support of all felines...NEUTER/SPAY YOUR PETS), if we have time: Fun Facts (bombay, other cats), Contact(meet the creators links to github, linkedin) -->
+        <!-- Icons -->

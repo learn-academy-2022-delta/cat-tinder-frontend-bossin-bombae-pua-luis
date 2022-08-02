@@ -3,14 +3,19 @@ class Header extends Component {
     render() {
         return (
     
-        <div class="header">
-                <a href="#default" class="logo">CompanyLogo</a>
-            <div class="header-right">
-                <a class="active" href="#home">Home</a>
-                <a href="#contact">Contact</a>
-                <a href="#about">About</a>
+        <header>
+            <div class="overlay">
+                <h1>Welcome to Cat Tinder</h1>
+                <h3>Premium Version</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero nostrum quis, odio veniam itaque ullam debitis qui magnam consequatur ab. Vero nostrum quis, odio veniam itaque ullam debitis qui magnam consequatur ab.</p>
+                <button>HOME</button>
+                <button>ABOUT</button>
+                <button>PRICING</button>
+                <button>FUN FACTS</button>
+                <button>CONTACT</button>
             </div>
-        </div>
+        </header>
+        
         )
     }
 }

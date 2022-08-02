@@ -5,7 +5,7 @@ class Footer extends Component {
             <>
             <section>Footer Example 3</section>
 
-		<footer class="footer-distributed">
+		<footer className='footer-distributed'>
 
 			<div class="footer-right">
 
