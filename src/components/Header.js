@@ -3,17 +3,17 @@ class Header extends Component {
     render() {
         return (
     
-            <header>
+        <header>
             <div class="overlay">
-        <h1>Welcome to Cat Tinder</h1>
-        <h3>Premium Version</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero nostrum quis, odio veniam itaque ullam debitis qui magnam consequatur ab. Vero nostrum quis, odio veniam itaque ullam debitis qui magnam consequatur ab.</p>
+                <h1>Welcome to Cat Tinder</h1>
+                <h3>Premium Version</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero nostrum quis, odio veniam itaque ullam debitis qui magnam consequatur ab. Vero nostrum quis, odio veniam itaque ullam debitis qui magnam consequatur ab.</p>
                 <button>HOME</button>
                 <button>ABOUT</button>
                 <button>PRICING</button>
                 <button>FUN FACTS</button>
                 <button>CONTACT</button>
-                </div>
+            </div>
         </header>
         
         )
