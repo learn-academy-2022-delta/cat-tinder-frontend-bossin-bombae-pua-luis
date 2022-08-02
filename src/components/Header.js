@@ -9,9 +9,7 @@ class Header extends Component {
                 <h3>Premium Version</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero nostrum quis, odio veniam itaque ullam debitis qui magnam consequatur ab. Vero nostrum quis, odio veniam itaque ullam debitis qui magnam consequatur ab.</p>
                 <button>HOME</button>
-                <br>
                 <button>ABOUT</button>
-                <br>
                 <button>PRICING</button>
                 <button>FUN FACTS</button>
                 <button>CONTACT</button>

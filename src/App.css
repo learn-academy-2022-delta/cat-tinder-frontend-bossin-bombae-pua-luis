@@ -123,12 +123,14 @@ section {
 *{padding: 0; margin: 0; box-sizing: border-box;}
 body{height: 900px;}
 header {
-	background: url('https://previews.123rf.com/images/bllkcbs/bllkcbs1803/bllkcbs180300024/98005642-two-brown-cats-sitting-and-snuggling-each-other.jpg');
+	background: url('https://d.newsweek.com/en/full/1973779/stock-image-cats-snuggling-together.jpg');
   text-align: center;
 	width: 100%;
 	height: auto;
-	background-size: auto;
+	background-size: center;
 	background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: -530px;
 	position: relative;
 	overflow: hidden;
 	border-radius: 0 0 85% 85% / 30%;
