@@ -1,3 +1,4 @@
+
 // Imports React into our test file.
 import React from 'react'
 
@@ -20,3 +21,11 @@ describe("When Home renders", () => {
       expect(homeHeading).toEqual("Welcome to CatTinder")
     })
   })
+
+import React from 'react'
+import Enzyme, { shallow } from 'enzyme'
+import Adapter from 'enzyme-adapter-react-16'
+import Home from './Home';
+
+Enzyme.configure({adapter: new Adapter()})
+
