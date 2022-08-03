@@ -3,23 +3,23 @@ class Footer extends Component {
     render() {
         return (
             <>
-            <section>Footer Example 3</section>
+            {/* <section>Footer Example 3</section> */}
 
 		<footer className='footer-distributed'>
 
-			<div class="footer-right">
+			<div className='footer-right'>
 
-				<a href="#"><i class="fa fa-facebook"></i></a>
-				<a href="#"><i class="fa fa-twitter"></i></a>
-				<a href="#"><i class="fa fa-linkedin"></i></a>
-				<a href="#"><i class="fa fa-github"></i></a>
+				<a href="#"><i className='fa fa-facebook'></i></a>
+				<a href="#"><i className='fa fa-twitter'></i></a>
+				<a href="#"><i className='fa fa-linkedin'></i></a>
+				<a href="#"><i className='fa fa-github'></i></a>
 
 			</div>
 
-			<div class="footer-left">
+			<div className='footer-left'>
 
-				<p class="footer-links">
-					<a class="link-1" href="#">Home</a>
+				<p className='footer-links'>
+					<a className='link-1' href="#">Home</a>
 
 					<a href="#">Blog</a>
 

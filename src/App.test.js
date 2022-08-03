@@ -46,5 +46,4 @@ describe("when App renders, ", ()=> {
 
 })
 
-})
 
