@@ -21,61 +21,65 @@ class CatNew extends Component {
     handleChange = (e) => {
         const { newCat } = this.state
         newCat[e.target.name] = e.target.value
-        // console.log(e.target.value)
-        // console.log(e.target.name)
         this.setState({ newCat: newCat })
     }
 
     handleSubmit = () => {
         this.props.createNewCat(this.state.newCat)
-        // console.log(this.state)
         this.setState({ submitted: true})
     }
     render() {
-        // console.log('from catnew: ', this.state)
         return (
-            <div className="page-body">
-        <h2>Create a New Cat</h2>
-        <Form>
-          <FormGroup>
-            <Label for="name">Name</Label>
-            <Input
-              type="text"
-              name="name"
-              onChange={this.handleChange}
-            />
-          </FormGroup>
-          <FormGroup>
-            <Label for="age">Age</Label>
-            <Input
-              type="text"
-              name="age"
-              onChange={this.handleChange}
-            />
-          </FormGroup>
-          <FormGroup>
-            <Label for="enjoys">Enjoys</Label>
-            <Input
-              type="text"
-              name="enjoys"
-              onChange={this.handleChange}
-            />
-          </FormGroup>
-          <FormGroup>
-            <Label for="image">Image URL</Label>
-            <Input
-              type="text"
-              name="image"
-              onChange={this.handleChange}
-            />
-          </FormGroup>
-        </Form>
-        <Button onClick={this.handleSubmit} name="submit">
-          Submit Cat
-        </Button>
-        { this.state.submitted && <Redirect to="/catindex"/> }
-      </div>
-        )
+            <div 
+              className="page-body">
+
+              <h2>Create a New Cat</h2>
+
+              <Form>
+                <FormGroup>
+                  <Label for="name">Name</Label>
+                  <Input
+                    type="text"
+                    name="name"
+                    onChange={this.handleChange}
+                  />
+                </FormGroup>
+
+                <FormGroup>
+                  <Label for="age">Age</Label>
+                  <Input
+                    type="text"
+                    name="age"
+                    onChange={this.handleChange}
+                  />
+                </FormGroup>
+
+                <FormGroup>
+                  <Label for="enjoys">Enjoys</Label>
+                  <Input
+                    type="text"
+                    name="enjoys"
+                    onChange={this.handleChange}
+                  />
+                </FormGroup>
+
+                <FormGroup>
+                  <Label for="image">Image URL</Label>
+                  <Input
+                    type="text"
+                    name="image"
+                    onChange={this.handleChange}
+                  />
+                </FormGroup>
+              </Form>
+
+                <Button onClick={this.handleSubmit} name="submit">
+                  Submit Cat
+                </Button>
+                { this.state.submitted && <Redirect to="/catindex"/> }
+            </div>
+            
+      )
     }
 }
 
