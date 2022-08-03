@@ -1,4 +1,3 @@
-
 // Imports React into our test file.
 import React from 'react'
 
@@ -9,23 +8,15 @@ import Enzyme, { shallow } from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
 
 // Imports in the component we are going to be testing.
-import Home from './Home'
+import Header from './Header'
 
 //Allows us to utilize the adapter we import in earlier, allowing us to call and render a component.
 Enzyme.configure({adapter: new Adapter()})
 
-describe("When Home renders", () => {
-    it("displays an image and all of its props", () => {
-      const home = shallow(<Home />)
-      const homeHeading = home.find("h3").text()
-      expect(homeHeading).toEqual("Welcome to CatTinder")
+describe("When Header renders", () => {
+    it("displays a heading", () => {
+      const header = shallow(<Header />)
+      const headerHeading = header.find("h1").text()
+      expect(headerHeading).toEqual("Welcome to Cat Tinder")
     })
   })
-
-import React from 'react'
-import Enzyme, { shallow } from 'enzyme'
-import Adapter from 'enzyme-adapter-react-16'
-import Home from './Home';
-
-Enzyme.configure({adapter: new Adapter()})
-
