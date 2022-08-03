@@ -4,7 +4,7 @@ class Header extends Component {
         return (
     
         <header>
-            <div class="overlay">
+            <div className='overlay'>
                 <h1>Welcome to Cat Tinder</h1>
                 <h3>Premium Version</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero nostrum quis, odio veniam itaque ullam debitis qui magnam consequatur ab. Vero nostrum quis, odio veniam itaque ullam debitis qui magnam consequatur ab.</p>
