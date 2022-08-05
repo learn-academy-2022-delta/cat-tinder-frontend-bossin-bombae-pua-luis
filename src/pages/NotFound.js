@@ -1,4 +1,7 @@
+import { render } from '@testing-library/react'
 import React, { Component} from 'react'
+
+
 class NotFound extends Component {
     render() {
         const bckgrdmystyle = {
@@ -16,15 +19,15 @@ class NotFound extends Component {
             textAlign: "center",
             backgroundColor: "pink",
           };
-        return (
 
-            <div class="notfound">
-            <div class="notfound-404">
-            <h1 style={fontStyle}>404</h1>
-            <h2 style={bckgrdmystyle}>Page not found</h2>
-            </div>
-            <a href="#" class="btn btn-primary">Go To Homepage</a>
-            </div>
+        return (
+            <div style={bckgrdmystyle}>
+                <h1 style={fontStyle}> 404 NOT FOUND</h1>
+                <p></p>
+            
+          </div>
+            
+
         )
     }
 }

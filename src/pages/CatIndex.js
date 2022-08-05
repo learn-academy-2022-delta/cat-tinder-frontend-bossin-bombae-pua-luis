@@ -8,30 +8,27 @@ class CatIndex extends Component {
     render() {
         return (
         <>
-            <h3>Find your purrfect match</h3>
-            <div>
-                <Col sm="4">
+            <h1>Find your purrfect match</h1>
+            <div className='cardDeck'>
+                <Col sm="3">
                 <CardDeck>
                 {this.props.cats && this.props.cats.map(cat => {
                     return(
-                        
-                        <Card key={cat.id}>
+                        <Card key ={cat.id}>
                           <CardImg top width="100%" src={cat.image} alt="Card image cap" />
                           <CardBody>
                             <NavLink to={`/catshow/${cat.id}`}>
-                            <Button>More Info Here</Button>
+                            <Button>Full Prowlfile</Button>
                             </NavLink>
                           </CardBody>
                         </Card>
-                     
                     )
                 })}
-                </CardDeck>
+                 </CardDeck>
                 </Col>
             </div>
-          
         </>
-
+        
         )
     }
 }
