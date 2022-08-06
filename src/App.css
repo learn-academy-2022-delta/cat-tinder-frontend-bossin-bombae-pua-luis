@@ -62,7 +62,7 @@ body {
 }
 
 .footer-distributed .footer-links a:before {
-  content: "·";
+  /* content: "·"; */
   font-size: 20px;
   left: 0;
   color: #fff;
@@ -155,13 +155,16 @@ header .overlay{
 
 h1 {
 	font-family: 'Dancing Script', cursive;
-	font-size: 80px;
+	font-size: 100px;
 	margin-bottom: 30px;
+  text-align: center;
 }
 
 h3, p {
 	font-family: 'Open Sans', sans-serif;
-	margin-bottom: 30px;
+	font-size: 23px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 button {
@@ -176,4 +179,16 @@ button {
 }
 button:hover{
 	cursor: pointer;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.cardDeck {
+  align-items: center;
+
 }

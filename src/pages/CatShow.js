@@ -1,6 +1,8 @@
 import React, { Component} from 'react'
 import { Card, CardImg, CardText, CardBody,
     CardTitle, CardSubtitle, Button } from 'reactstrap';
+import { NavLink } from 'react-router-dom';
+
 
 class CatShow extends Component {
     render() {
@@ -14,9 +16,15 @@ class CatShow extends Component {
                         <CardTitle>Hi my name is</CardTitle>
                         <CardSubtitle>{cat.age}</CardSubtitle>
                         <CardText>{cat.enjoys}</CardText>
-                        <Button>Button</Button>
+                        
+                        <NavLink to={`/catedit/${this.props.cat.id}`}>
+                        <Button>Update Cat</Button>
+                        </NavLink>
+
+                        <Button onClick={() => this.props.deleteCat(cat.id )}>Delete Cat</Button>
+
                     </CardBody>
-             </Card>
+                </Card>
             </>
         )
     }
