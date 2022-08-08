@@ -74,11 +74,11 @@ class CatEdit extends Component {
                     value={ this.state.updatedCat.image }
                   />
                 </FormGroup>
-                <Button onClick={this.handleSubmit} name="submit">
+                  <Button onClick={this.handleSubmit} name="submit">
                   Update right meow!
-                </Button>
-                { this.state.submitted && <Redirect to={`/catshow/${this.props.cat.id}`}/> }
-                </Form>
+                  </Button>
+                  { this.state.submitted && <Redirect to={`/catshow/${this.props.cat.id}`}/> }
+              </Form>
             </>
         )
     }

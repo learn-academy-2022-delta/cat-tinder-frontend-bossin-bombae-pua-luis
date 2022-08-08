@@ -15,16 +15,14 @@ class CatShow extends Component {
                     <CardBody>
                         <CardTitle style={{textAlign: 'center', fontSize: 30}}>Hi my name is {cat.name}!</CardTitle>
                         <CardSubtitle style={{textAlign: 'center', fontSize: 30}}>I am {cat.age} years old.</CardSubtitle>
-                        <CardText style={{textAlign: 'center', fontSize: 30}}>
-                            {cat.enjoys}
-                        </CardText>
-                        <NavLink to={`/catedit/${this.props.cat.id}`}>
-                        <Button>Update Cat</Button>
-                        </NavLink>
-                        &nbsp; &nbsp;
-                        <NavLink to={"/catindex"}>
-                        <Button onClick={() => this.props.deleteCat(cat.id)}>Delete Cat</Button>
-                        </NavLink>
+                        <CardText style={{textAlign: 'center', fontSize: 30}}>{cat.enjoys}</CardText>
+                            <NavLink to={`/catedit/${this.props.cat.id}`}>
+                            <Button>Update Cat</Button>
+                            </NavLink>
+                            &nbsp; &nbsp;
+                            <NavLink to={"/catindex"}>
+                            <Button onClick={() => this.props.deleteCat(cat.id)}>Delete Cat</Button>
+                            </NavLink>
                     </CardBody>
                 </Card>
             </>

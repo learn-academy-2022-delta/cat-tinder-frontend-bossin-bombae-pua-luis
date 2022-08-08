@@ -11,12 +11,11 @@ class FunFacts extends Component {
                     </img>
                     <ul>
                         <li>1950 America - breeders crossed a Burmese and a black American Shorthair with bright, copper eyes which resulted in the Bombay.</li>
-                        <br/>
+                    <br/>
                         <li>Bombay cats were bred to resemble the black leopard found in India.</li>
-                        <br/>
-                        <li>These cats love to climb and jump. They should be kept active.
-                        </li>
-                        <br/>
+                    <br/>
+                        <li>These cats love to climb and jump. They should be kept active.</li>
+                    <br/>
                         <li>The Bombay sway is a main distinction of their breed. Their walk mimics the Indian black leopard they are meant to resemble.</li>
                     </ul>
                     <br/>

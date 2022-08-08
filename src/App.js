@@ -8,7 +8,6 @@ import CatNew from "./pages/CatNew"
 import CatShow from "./pages/CatShow"
 import Home from "./pages/Home"
 import About from "./pages/About"
-import Pricing from './pages/Pricing.js'
 import FunFacts from './pages/FunFacts.js'
 import Contact from './pages/Contact.js'
 import NotFound from "./pages/NotFound"
@@ -107,7 +106,6 @@ render () {
             )
           }} />
         <Route path="/about" component={About} />
-        <Route path="/pricing" component={Pricing} />
         <Route path="/funfacts" component={FunFacts} />
         <Route path="/contact" component={Contact} />
         <Route exact path="/" component={Home} />

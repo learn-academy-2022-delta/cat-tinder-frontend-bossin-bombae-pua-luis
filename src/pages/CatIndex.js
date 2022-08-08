@@ -11,9 +11,7 @@ class CatIndex extends Component {
             <h1>Find your purrfect match!</h1>
             
             <div className='cardDeck'>
-            <Row sm="3">
-                {/* <Col sm="3"> */}
-                {/* <CardDeck> */}
+                <Row sm="3">
                 {this.props.cats && this.props.cats.map(cat => {
                     return(
                         <Card key ={cat.id}>
@@ -26,8 +24,6 @@ class CatIndex extends Component {
                         </Card>
                     )
                 })}
-                 {/* </CardDeck> */}
-                {/* </Col> */}
                 </Row>
             </div>
         </>
