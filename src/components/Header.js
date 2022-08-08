@@ -18,8 +18,8 @@ class Header extends Component {
                         <button>ABOUT</button>
                     </NavLink>
                     &nbsp; &nbsp;
-                    <NavLink to={`/pricing/`}>
-                        <button>PRICING</button>
+                    <NavLink to={`/catnew/`}>
+                        <button>CREATE A PROFILE</button>
                     </NavLink>
                     &nbsp; &nbsp;
                     <NavLink to={`/funfacts/`}>

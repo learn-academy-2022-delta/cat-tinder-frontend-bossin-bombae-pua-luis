@@ -9,31 +9,18 @@ body {
   background-color: #ccc;
 }
 
-/* section {
-  width: 100%;
-  display: inline-block;
-  background: #ccc;
-  height: 50vh;
-  text-align: center;
-  font-size: 22px;
-  font-weight: 700;
-  text-decoration: underline;  
-} */
-
-
 .footer-distributed {
   height: 10%;
   padding: 50px;
   color: #FFF;
   text-shadow: 1px 1px 1px #333;
   background-image: linear-gradient( 135deg, #9f05ff69 10%, #fd5e086b 100%);
-  /* background-color: #292c2f; */
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
   text-align: left;
   font: normal 16px sans-serif;
-  padding: 45px 50px;
+  padding: 75px 55px;
   position: absolute
 }
 
@@ -42,14 +29,13 @@ body {
   font-size: 14px;
   margin: 0;
 }
-/* Footer links */
 
 .footer-distributed p.footer-links {
   font-size: 18px;
   font-weight: bold;
   color: #ffffff;
   margin: 0 0 10px;
-  padding: 0;
+  padding: 10;
   transition: ease .25s;
 }
 
@@ -100,7 +86,7 @@ body {
 
 /* Media Queries */
 
-@media (max-width: 600px) {
+@media (max-width: 400px) {
   .footer-distributed .footer-left, .footer-distributed .footer-right {
     text-align: center;
   }
@@ -188,7 +174,48 @@ button:hover{
   width: 70%;
 }
 
+
 .cardDeck {
   align-items: center;
+}
 
+
+.portfolios, a:link {
+  text-align: center;
+  font-size: medium;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.portfolios, a:visited {
+  color: #333;
+}
+.portfolios, a:active {
+  color: blue;
+}
+.portfolios, a:hover {
+  cursor: pointer
+}
+p.creators {
+  font-size: xx-large;
+  text-align: center;
+  font-family: cursive;
+  color: black;
+}
+funfacts, p {
+  font-size: 12pt;
+  text-align: center;
+}
+funfacts, ul li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  color: black;
+  margin: 5px;
+}
+
+.cardtext {
+  text-align: left;
 }

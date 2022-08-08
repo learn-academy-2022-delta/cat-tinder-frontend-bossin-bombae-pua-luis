@@ -7,7 +7,7 @@ class NotFound extends Component {
         const bckgrdmystyle = {
             backgroundImage: "url(/wyc.jpeg)",
             backgroundRepeat: "no-repeat",
-            backgroundAttachment: "fixed",
+            // backgroundAttachment: "fixed",
             backgroundPosition: "center",
             height: "100vh",
         };
