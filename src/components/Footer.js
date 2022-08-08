@@ -6,18 +6,7 @@ class Footer extends Component {
     render() {
         return (
         <>
-            {/* <section>Footer Example 3</section> */}
-
 			<footer className='footer-distributed'>
-
-				<div className='footer-right'>
-
-					<a href="#"><i className='fa fa-facebook'></i></a>
-					<a href="#"><i className='fa fa-twitter'></i></a>
-					<a href="#"><i className='fa fa-linkedin'></i></a>
-					<a href="#"><i className='fa fa-github'></i></a>
-
-				</div>
 
 				<div className='footer-left'>
 
@@ -30,8 +19,8 @@ class Footer extends Component {
 							<button>ABOUT</button>
 						</NavLink>
 						&nbsp; &nbsp;
-						<NavLink to={`/pricing/`}>
-							<button>PRICING</button>
+						<NavLink to={`/catnew/`}>
+							<button>CREATE A PROFILE</button>
 						</NavLink>
 						&nbsp; &nbsp;
 						<NavLink to={`/funfacts/`}>

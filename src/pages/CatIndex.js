@@ -1,6 +1,6 @@
 import React, { Component} from 'react'
 import { Card, CardImg, CardText, CardDeck, CardBody,
-    CardTitle, CardSubtitle, Button, Col } from 'reactstrap';
+    CardTitle, CardSubtitle, Button, Col, Row } from 'reactstrap';
 import { NavLink } from 'react-router-dom'
 
 
@@ -8,10 +8,10 @@ class CatIndex extends Component {
     render() {
         return (
         <>
-            <h1>Find your purrfect match</h1>
+            <h1>Find your purrfect match!</h1>
+            
             <div className='cardDeck'>
-                <Col sm="3">
-                <CardDeck>
+                <Row sm="3">
                 {this.props.cats && this.props.cats.map(cat => {
                     return(
                         <Card key ={cat.id}>
@@ -24,8 +24,7 @@ class CatIndex extends Component {
                         </Card>
                     )
                 })}
-                 </CardDeck>
-                </Col>
+                </Row>
             </div>
         </>
         

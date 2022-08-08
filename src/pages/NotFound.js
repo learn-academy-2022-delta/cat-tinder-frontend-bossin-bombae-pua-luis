@@ -7,7 +7,6 @@ class NotFound extends Component {
         const bckgrdmystyle = {
             backgroundImage: "url(/wyc.jpeg)",
             backgroundRepeat: "no-repeat",
-            backgroundAttachment: "fixed",
             backgroundPosition: "center",
             height: "100vh",
         };
@@ -23,11 +22,7 @@ class NotFound extends Component {
         return (
             <div style={bckgrdmystyle}>
                 <h1 style={fontStyle}> 404 NOT FOUND</h1>
-                <p></p>
-            
-          </div>
-            
-
+            </div>
         )
     }
 }

@@ -8,7 +8,6 @@ import CatNew from "./pages/CatNew"
 import CatShow from "./pages/CatShow"
 import Home from "./pages/Home"
 import About from "./pages/About"
-import Pricing from './pages/Pricing.js'
 import FunFacts from './pages/FunFacts.js'
 import Contact from './pages/Contact.js'
 import NotFound from "./pages/NotFound"
@@ -30,6 +29,7 @@ class App extends Component {
   componentDidMount() {
     this.readCat()
   }
+
   readCat = () => {
     fetch("http://localhost:3000/cats",)
     .then(response => response.json())
@@ -82,24 +82,33 @@ render () {
     <Router>
       <Header />
       <Switch>
-        <Route path="/about" component={About} />
-        <Route path="/pricing" component={Pricing} />
-        <Route path="/funfacts" component={FunFacts} />
-        <Route path="/contact" component={Contact} />
-        <Route exact path="/" component={Home} />
-        <Route path="/catindex" render={(props) => <CatIndex cats={this.state.cats} />} />
-        <Route path="/catshow/:id" render={(props) => {
+      <Route path="/catedit/:id" 
+        render={(props) => {
           let id = +props.match.params.id
           let cat = this.state.cats.find(catObject => catObject.id === id)
-          return( 
-            <CatShow cat={cat}
-            deleteCat={this.deleteCat}/>
-        )}} />
+          return(
+           <CatEdit cat={cat} 
+          updateCat={this.updateCat} />
+          )
+        }} />
+        <Route path="/catindex" render={(props) => <CatIndex cats={this.state.cats} />} />
         <Route path="/catnew" 
         render={() => {
           return <CatNew createNewCat={this.createNewCat} /> 
         }}/>
-        <Route path="/catedit" component={CatEdit} />
+        <Route path="/catshow/:id" render={(props) => {
+          let id = +props.match.params.id
+          let cat = this.state.cats.find(catObject => catObject.id === id)
+          return( <CatShow 
+          cat={cat}
+          deleteCat={this.deleteCat}
+           />
+            )
+          }} />
+        <Route path="/about" component={About} />
+        <Route path="/funfacts" component={FunFacts} />
+        <Route path="/contact" component={Contact} />
+        <Route exact path="/" component={Home} />
         <Route component={NotFound}/>
 
       </Switch>
